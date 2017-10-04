@@ -1,4 +1,4 @@
 package exception;
 
-public class InvalidParameterException extends Throwable {
+public class InvalidParameterException extends RuntimeException {
 }

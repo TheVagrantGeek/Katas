@@ -1,5 +1,5 @@
 package exception;
 
-public class MissingParameterException extends Throwable {
+public class MissingParameterException extends RuntimeException {
 
 }

@@ -10,10 +10,7 @@
 
     <properties>
         <junit.version>4.12</junit.version>
-        <jersey.version>2.26</jersey.version>
-        <jackson.version>2.9.1</jackson.version>
         <mockito.version>1.10.19</mockito.version>
-        <logging.version>1.2</logging.version>
     </properties>
 
     <dependencies>
