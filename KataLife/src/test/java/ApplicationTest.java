@@ -1,4 +1,26 @@
+import exception.MissingParameterException;
+import org.junit.Test;
+import org.mockito.Mock;
+
+import java.util.Properties;
+
 public class ApplicationTest {
+
+	@Mock Properties emptyProperties;
+
+	@Test(expected = MissingParameterException.class)
+	public void givenMissingParameters_whenStartingApplication_applicationStops()
+	{
+		Application app = new Application();
+		app.run(null);
+	}
+
+	@Test(expected = MissingParameterException.class)
+	public void givenEmptyParameters_whenStartingApplication_applicationStops()
+	{
+		Application app = new Application();
+		app.run(emptyProperties);
+	}
 
 	//	private Properties completeButInvalidProperties;
 	//	private Application app;
